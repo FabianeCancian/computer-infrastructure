@@ -1,4 +1,4 @@
-Name: Run Weather script and Push Changes
+name: Run Weather script and Push Changes
 
 on:
   schedule:
