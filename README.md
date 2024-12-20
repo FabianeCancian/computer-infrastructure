@@ -62,10 +62,13 @@ In this project, you will automate your weather.sh script to run daily and push 
 
 # References
 
-- [Assessment Description](https://github.com/ianmcloughlin/2425_computer_infrastructure?tab=readme-ov-file#repository-20)
+- [Assessment Description and Lectures](https://github.com/ianmcloughlin/2425_computer_infrastructure?tab=readme-ov-file#repository-20)
 - [Data Description](https://data.gov.ie/dataset/todays-weather-athenry)
 - [Data Source](https://prodapi.metweb.ie/observations/athenry/today)
 - [Bash Commands](https://phoenixnap.com/kb/bash-commands)
 - [Bash touch command](https://www.serveracademy.com/blog/how-to-use-the-touch-command-in-linux/)
 - [Data Manipulation](https://github.com/FabianeCancian/Principles-of-Data-Analytics/blob/main/penguins.ipynb)
 - [Plots](https://github.com/FabianeCancian/PFDA-assignments/blob/main/week06/assignment_6_Weather.ipynb)
+- [Code comments and research](https://chatgpt.com/)
+- [Github Codespace](https://docs.github.com/en/codespaces/overview)
+- [Cron Automation](https://www.geeksforgeeks.org/how-to-automate-tasks-with-cron-jobs-in-linux/#how-to-create-new-schedules-using-crontab)
