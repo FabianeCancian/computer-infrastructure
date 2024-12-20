@@ -8,13 +8,10 @@ on:
   workflow_dispatch:
 # Trigges the command manually
 
-
-# The workflow has permission to write to the repository content (e.g., commit changes).
-jobs:
-  run-weather:
 permissions:
   contents: write
 
+# The workflow has permission to write to the repository content (e.g., commit changes).
 jobs:
   run-weather:
     runs-on: ubuntu-latest
