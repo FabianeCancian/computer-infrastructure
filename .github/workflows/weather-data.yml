@@ -1,27 +1,38 @@
+# The name of the GitHub Actions workflow. 
 name: Run Weather script and Push Changes
 
+ # The workflow is triggered daily at 11:00 AM UTC using a cron schedule.
 on:
   schedule:
     - cron: '0 11 * * *'
   workflow_dispatch:
+# Trigges the command manually
 
+
+# The workflow has permission to write to the repository content (e.g., commit changes).
+jobs:
+  run-weather:
 permissions:
   contents: write
 
 jobs:
   run-weather:
     runs-on: ubuntu-latest
+# The job will run on the latest available version of Ubuntu.
 
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
       with:
         persist-credentials: true
+# This step checks out the code from the repository to the workflow's environment.
 
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
         python-version: '3.x'
+ #This step sets up Python in the environment, using the latest available Python version.
+
 
       # Set up bash and wget
     - name: Set up bash and wget
@@ -29,6 +40,7 @@ jobs:
 
     - name: Install dependencies
       run: bash weather.sh
+# This step runs the "weather.sh" shell script
 
     - name: Commit and push changes
       env:
@@ -42,3 +54,4 @@ jobs:
         echo "No changes to commit"
         git push origin main
 
+# This step commits and pushes any changes, adds any changes made to JSON files in the "data/weather" directory.
